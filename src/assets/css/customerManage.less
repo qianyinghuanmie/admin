@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "common";
+/*customerInfo 页面的样式*/
+#customerInfo{
+  // 基础信息
+  .basicInfo{
+    font-size: 14px;
+    span{
+      font-size: 14px;
+    }
+    b{
+      margin-right: 1rem;
+    }
+  }
+  .basicInfo-col{
+    width: 20%;
+    margin: 1rem 0;
+    border-right: 1px solid @border2;
+    >div{
+      line-height:2rem;
+     padding-left: 1rem;
+    }
+
+  }
+  // 客户轨迹
+  .latestTime{
+    >ul{
+      display: flex;
+      display: -webkit-flex;
+      padding: 1rem 0;
+      border-top: 1px solid @border2;
+      border-bottom: 1px solid @border2;
+    }
+    li{
+      border: 1px solid @border2;
+      text-align: center;
+      padding: 2px 5px;
+    }
+  }
+}

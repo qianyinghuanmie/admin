@@ -1,0 +1,55 @@
+<div id="customerManage">
+  <div class="row">
+    <div class="col-md-12 Title"><span>客户管理</span>-{{title}}</div>
+    <div class="col-md-12">
+      <button class="newButton"><span class="plus">+</span><a routerLink="./new" routerLinkActive="active">新建用户</a></button>
+    </div>
+    <div class="filter col-md-12">
+      <form action="" class="form-inline">
+        <input type="text" class="col-md-2 form-control" placeholder="请输入手机号">
+        <select class="col-md-2 form-control">
+          <option *ngFor="let i of ['--账号类型--',2,3,4,5]">{{i}}</option>
+        </select>
+        <select class="col-md-2 form-control">
+          <option *ngFor="let i of ['--注册时间--',2,3,4,5]">{{i}}</option>
+        </select>
+        <select class="col-md-2 form-control">
+          <option *ngFor="let i of ['--活跃时间--',2,3,4,5]">{{i}}</option>
+        </select>
+        <button class="form-control button">立即搜索</button>
+      </form>
+    </div>
+    <div class="account-tab col-md-12">
+      <table class="table table-striped col-md-12">
+        <thead>
+        <tr>
+          <th *ngFor="let i of [1,2,3,4,5,6,7]">账号类别{{i}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td *ngFor="let i of [1,2,3,4,5]">项目经理{{i}}</td>
+          <td><input type="checkbox" class="checkChange"></td>
+          <td>
+            <button>修改</button>
+          </td>
+        </tr>
+        <tr *ngFor="let i of [1,2,3,4,5]">
+          <td *ngFor="let j of [1,2,3,4,5]">测试数据{{i}}{{j}}</td>
+          <td><input type="checkbox" class="checkChange"></td>
+          <td>
+            <button>修改</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <!--分页-->
+      <div class="slicePage">
+        <div>共12条记录</div>
+        <div>
+          <ngb-pagination [collectionSize]="120" [(page)]="page" [maxSize]="5" [rotate]="true" [boundaryLinks]="true"></ngb-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

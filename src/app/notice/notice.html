@@ -1,0 +1,17 @@
+<div id="notice">
+  <div class="pageTitle col-md-12">
+    消息通知
+  </div>
+  <div>
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+      <ngb-panel *ngFor="let i of [1,2,3,4,5,6,7,8]">
+        <ng-template ngbPanelTitle>
+          <span>[2017-03-07 15:32]&#9733;  消息通知&nbsp;<b>我的消息   </b>    某个消息 </span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+        这是一个消息,   这是一个消息   这是一个消息   这是一个消息   这是一个消息   这是一个消息   这是一个消息
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </div>
+</div>

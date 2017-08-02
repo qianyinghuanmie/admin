@@ -1,0 +1,87 @@
+<div>
+  <ngb-tabset>
+    <ngb-tab>
+      <ng-template ngbTabTitle><b>示例</b></ng-template>
+      <ng-template ngbTabContent>
+        <!--轮播代码-->
+        <ngb-carousel  style="height: 400px;width: 500px">
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse1.jpg" alt="Random first slide" height="400">
+            <div class="carousel-caption">
+              <h3>10 seconds between slides...</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse2.jpg" alt="Random second slide" height="400">
+            <div class="carousel-caption">
+              <h3>No keyboard...</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse3.jpg" alt="Random third slide" height="400">
+            <div class="carousel-caption">
+              <h3>And no wrap after last slide.</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="代码">
+      <ng-template ngbTabContent>
+        <p>html代码 </p>
+        <pre class="prettyprint">
+<textarea style="width: 80%;height: 400px">
+        <!--轮播代码-->
+        <ngb-carousel  style="height: 400px;width: 500px">
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse1.jpg" alt="Random first slide" height="400">
+            <div class="carousel-caption">
+              <h3>10 seconds between slides...</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse2.jpg" alt="Random second slide" height="400">
+            <div class="carousel-caption">
+              <h3>No keyboard...</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="../../assets/img/carousel/carouse3.jpg" alt="Random third slide" height="400">
+            <div class="carousel-caption">
+              <h3>And no wrap after last slide.</h3>
+              <p>This carousel uses customized default values.</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+</textarea>
+</pre>
+        <p>typescript代码</p>
+        <pre class="prettyprint">
+<textarea style="width: 80%;height: 300px">
+import {Component} from '@angular/core';
+import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+
+@Component({
+  selector: 'ngbd-carousel-config',
+  templateUrl: './carousel-config.html',
+  providers: [NgbCarouselConfig] // add NgbCarouselConfig to the component providers
+})
+export class NgbdCarouselConfig {
+  constructor(config: NgbCarouselConfig) {
+    // customize default values of carousels used by this component tree
+    config.interval = 10000;
+    config.wrap = false;
+    config.keyboard = false;
+  }
+}
+</textarea>
+</pre>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

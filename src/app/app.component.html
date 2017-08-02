@@ -1,0 +1,36 @@
+<!--The whole content below can be removed with the new code.-->
+<div id="home">
+  <div id="header">
+    <div><h2>后台管理系统</h2></div>
+    <div>
+      <div><img src="../assets/img/email.png" alt="" width="40"></div>
+      <div>admin<img src="../assets/img/down-icon.png" width="30"></div>
+    </div>
+  </div>
+  <div id="content">
+    <!--aside区域菜单-->
+    <div class="row">
+      <aside class="col-md-2 menu-aside">
+        <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one" (panelChange)="beforeChange($event)">
+         <!-- <ngb-panel title="One" id="config-panel-one">
+            <ng-template ngbPanelContent>
+              <a routerLink="/menus" routerLinkActive="active">menus</a>
+            </ng-template>
+          </ngb-panel>-->
+          <ngb-panel  *ngFor="let menu of menus;let j = index" title="{{menu.name}}" routerLink="/{{menus.path}}"  class="menu" id="menu{{j}}">
+            <ng-template ngbPanelContent>
+              <div *ngFor="let list of menu.list;let i =index">
+                <a routerLink="/{{menu.path}}/{{i}}" routerLinkActive="active">{{list}}</a>
+              </div>
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </aside>
+      <!--section区域，显示内容-->
+      <section class="col-md-offset-2 col-md-10 menu-section">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+  </div>
+</div>
+

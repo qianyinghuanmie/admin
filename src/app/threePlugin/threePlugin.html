@@ -1,0 +1,37 @@
+<div>
+    <h3>图</h3>
+    <div id="myChart" style="width: 600px;height:400px;"></div>
+    <h2>关于echarts在angular2x+版本的使用说明</h2>
+    <p>由于 angular2+都是由typescript的编写的语言，需要有一些特殊的配置</p>
+  <p>1、先安装echarts</p>
+    <pre>npm install  echarts  --save</pre>
+  <p>2、在echarts目录下新建文件  echart.d.ts</p>
+  <textarea class="col-md-9">
+    export function init (elem: any);
+  </textarea>
+  <p>3、导入echarts模块</p>
+  <textarea class="col-md-9">
+     import * as echarts from 'echarts/dist/echarts.js'
+  </textarea>
+
+  <p>3、在ngOnInit配置图表示例</p>
+  <textarea class="col-md-9" style="height: 300px">
+  ngOnInit() {
+    const basic_lines = echarts.init(document.getElementById('myChart'));
+    basic_lines.setOption({
+      title: { text: 'ECharts 入门示例' },
+      tooltip: {},
+      xAxis: {
+        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+      },
+      yAxis: {},
+      series: [{
+        name: '销量',
+        type: 'bar',
+        data: [5, 20, 36, 10, 10, 20]
+      }]
+    });
+  }
+
+  </textarea>
+</div>
