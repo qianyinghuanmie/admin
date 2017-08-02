@@ -1,28 +1,32 @@
-# Project
+# 环境
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+需要安装nodeJS环境
 
-## Development server
+## 安装
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm install <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请参考：https://npm.taobao.org/
 
-## Code scaffolding
+## 依赖于
+  <ul>
+    <li>1. webpack2 &nbsp;&nbsp;<a href="https://webpack.js.org/" target="_blank">https://webpack.js.org/</a></li>
+    <li>2. angular4.0  &nbsp;&nbsp;<a href="https://angular.cn/docs/ts/latest/" target="_blank">https://angular.cn/docs/ts/latest/</a></li>
+    <li>3. bootstrap4&nbsp; &nbsp;<a href="https://v4-alpha.getbootstrap.com/" target="_blank">https://v4-alpha.getbootstrap.com/</a></li>
+    <li>4. ng-bootstrap1.0.0-alpha.25 &nbsp;&nbsp;<a href="https://ng-bootstrap.github.io/#/home" target="_blank">https://ng-bootstrap.github.io/#/home</a></li>
+  </ul>
+## 第三方插件
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+  <ul>
+    <li>1. echart <a href="http://echarts.baidu.com/index.html">http://echarts.baidu.com/index.html</a></li>
+  </ul>
 
-## Build
+## 开发服务器
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+npm run start <---- 使用npm命令运行
 
-## Running unit tests
+## 构建 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+npm run build <---- 使用npm命令构建，构建完成后会在dist目录中
 
-## Running end-to-end tests
+## 特别声明
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+如果本界面中使用到了您的产品或是对您造成了影响请及时联系我，我将第一时间去除<
