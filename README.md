@@ -13,12 +13,11 @@ npm install <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请�
     <li>3. bootstrap4&nbsp; &nbsp;<a href="https://v4-alpha.getbootstrap.com/" target="_blank">https://v4-alpha.getbootstrap.com/</a></li>
     <li>4. ng-bootstrap1.0.0-alpha.25 &nbsp;&nbsp;<a href="https://ng-bootstrap.github.io/#/home" target="_blank">https://ng-bootstrap.github.io/#/home</a></li>
   </ul>
-## 第三方插件
 
+## 第三方插件
   <ul>
     <li>1. echart <a href="http://echarts.baidu.com/index.html">http://echarts.baidu.com/index.html</a></li>
   </ul>
-
 ## 开发服务器
 
 npm run start <---- 使用npm命令运行
