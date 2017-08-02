@@ -18,6 +18,7 @@ npm install <---- 安装，如果下载比较慢，可使用淘宝的cnpm，请�
   <ul>
     <li>1. echart <a href="http://echarts.baidu.com/index.html">http://echarts.baidu.com/index.html</a></li>
   </ul>
+  
 ## 开发服务器
 
 npm run start <---- 使用npm命令运行
